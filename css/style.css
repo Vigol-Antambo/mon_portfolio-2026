@@ -6,8 +6,6 @@
     --gris-fonce: #666;
     --gris-tres-clair: #f8f8f8;
     --gris-clair: #EEE;
-
-
 }
 *{
     margin: 0;
@@ -19,41 +17,119 @@ body {
     background-color: var(--gris-tres-clair);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
-    
-
-
 }
-
-
 header {
     background-color: white;
-    box-shadow: 2px 6px 10px rgba(0,0,0,0.05);
+    box-shadow: 2 6 10 rgba(0,0,0,0.05);
     z-index: 100px;
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 3rem;
-        
+    padding: 1rem 2rem;        
 }
 header div a {
     text-decoration: none;
     font-size: 2.2rem;
     font-weight: bold;
-    color: var(--violet-fonce);
-
-
+    color: var(--violet-doux);
 }
 ul {
     display: flex;
     list-style: none;
-    text-decoration: none;
+    padding: 25px;
+    
 }
 ul li a {
     text-decoration: none;
+    color: var(--gris-fonce);
+    font-weight: 600;
+    margin-left: 1.1rem;
+    position: relative;
+    padding: 10px 0;
 }
-ul li{
-    margin-left: 20px;
+ul li a:hover{
+    color: var(--violet-doux);
+}
+ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: var(--violet-doux);
+    transition: width 0.5s ease;
+}
+ul li a:hover::after{
+    width: 100%;
+
+}
+a.active {
+    color: var(--violet-doux);
+    width: 100%;
+
+}
+a.active::after{
+    width: 100%;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+}
+.div1{
+    padding: 100px;
+    margin:t 50px;
+    margin-right: 0;
+    text-align: center; 
+
+}
+.div1 h1{
+    color: var(--violet-fonce);
+    font-size: 2.2rem;
+    align-content: center;
+
+}
+.div1 p {
+    font-size: 10px;
+    
+}
+.div1 a {
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    background-color: var(--violet-fonce);
+    padding: 3px;
+    margin: 100px;
+    font-size: 0.6rem;  
+}
+.div2{
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 90px;
+}
+.div2 img{
+    border: var(--violet-fonce) 5px,solid;
+    border-radius: 100%;
+}
+.section2{
+    margin: 150px;
+    margin-top: 10px;
+    padding: 45px;
+    text-align: center;
+}
+.section2 h2{
+    font-size: 2.2rem;
+    margin: 4px;
+    color: var(--violet-fonce);
+}
+.section2 p{
+    padding: 15px;
+}
+.section3 div table{
+    border-radius: 5Px;
+    align-items: center;
     
 }
