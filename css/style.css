@@ -20,14 +20,14 @@ body {
 }
 header {
     background-color: white;
-    box-shadow: 2 6 10 rgba(0,0,0,0.05);
+    box-shadow: 2px 6px 10px rgba(0,0,0,0.05);
     z-index: 100px;
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;        
+    padding: 2rem 3rem;        
 }
 header div a {
     text-decoration: none;
@@ -35,17 +35,19 @@ header div a {
     font-weight: bold;
     color: var(--violet-doux);
 }
+ul li{
+    list-style: none;
+    margin-left: 25px;
+}
 ul {
     display: flex;
-    list-style: none;
-    padding: 25px;
     
 }
 ul li a {
     text-decoration: none;
     color: var(--gris-fonce);
     font-weight: 600;
-    margin-left: 1.1rem;
+    font-size: 1.1rem;
     position: relative;
     padding: 10px 0;
 }
@@ -74,62 +76,84 @@ a.active {
 a.active::after{
     width: 100%;
 }
-.section1{
+.hero{
     display: flex;
     justify-content: center;
-}
-.div1{
-    padding: 100px;
-    margin:t 50px;
-    margin-right: 0;
-    text-align: center; 
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+    margin: 10rem 2rem;
 
 }
-.div1 h1{
-    color: var(--violet-fonce);
-    font-size: 2.2rem;
-    align-content: center;
+.hero img{
+    width: 300px;
+    height: 300x;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid var(--violet-doux);
+}
+.hero h1{
+    color: var(--violet-doux);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
 
 }
-.div1 p {
-    font-size: 10px;
-    
+.hero p{
+    color: var(--gris-fonce);
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+
 }
-.div1 a {
+.hero a {
     text-decoration: none;
+    display: inline-block;
+    background-color: var(--violet-doux);
     color: white;
-    border-radius: 8px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transforme 0.2s ease ;
+
+}
+.hero a:hover{
     background-color: var(--violet-fonce);
-    padding: 3px;
-    margin: 100px;
-    font-size: 0.6rem;  
+    transform: translateY(-3px);
 }
-.div2{
-    padding: 10px;
-    margin: 10px;
-    margin-left: 0px;
-    margin-right: 90px;
-}
-.div2 img{
-    border: var(--violet-fonce) 5px,solid;
-    border-radius: 100%;
-}
-.section2{
-    margin: 150px;
-    margin-top: 10px;
-    padding: 45px;
+
+
+.apropos{
+    width: 800px;
+    margin: 6rem auto;
     text-align: center;
 }
-.section2 h2{
-    font-size: 2.2rem;
-    margin: 4px;
-    color: var(--violet-fonce);
+section h2{
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+
 }
-.section2 p{
-    padding: 15px;
-}
-.section3 div table{
-    border-radius: 5Px;
-    align-items: center;
+section h2::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto;
+    margin-bottom: 1.2rem auto;
+    border-radius: 2px;
     
+
+}
+
+.apropos p{
+    margin: 2rem;
+    color: var(--gris-fonce);
+    font-size: 1.3rem;
+
 }
