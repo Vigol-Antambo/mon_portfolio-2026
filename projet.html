@@ -5,7 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
+    <style>
+        :root {
+        --violet-doux: #6C63FF;
+        --violet-fonce: #534EDD;
+        --orange-vif: #FFA726;
+        --gris-tres-fonce: #333;
+        --gris-fonce: #666;
+        --gris-tres-clair: #f8f8f8;
+        --gris-clair: #EEE;
+    }
+    
+        
+        
+        .commerce, .gestionaire, .blog{
+            background-color: white;
+            border-radius: 15px;
+            width: 300px;
+            margin: 50px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgb(0,0,0,0.05);
+            transition: 0.3s;
+            
+        }
+        .commerce:hover, .gestionaire:hover, .blog:hover{
+            transform: translateY(-5px);
+        }
+        .commerce img, .gestionaire img, .blog img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--violet-doux);
+
+        }
+        
+        .detail{
+            margin: 1rem;
+            width: 250px;
+            
+        }
+        .detail h3{
+            color: var(--violet-doux);
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .detail p{
+            margin-bottom: 20px;
+            color: var(--gris-fonce);
+            font-size: 0.7rem;
+        }
+        .liens2{
+            display: flex;
+            justify-content: space-between;
+            margin: 2px auto;
+        }
+        .liens2 a{
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            align-items: center;
+            
+            
+        }
+        .liens a{
+            text-decoration: none;
+            background-color: var(--gris-clair);
+            color: var(--violet-doux);
+            padding: 2px 5px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            
+
+        }
+        
+        hr{
+            color: var(--gris-fonce);
+            margin: 15px;
+        }
+        .realisation{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 0px;
+            display: flex;
+            
+        }
+        .liens a, .liens2 a{
+            transition: 0.2s;
+        }
+        .liens a, .liens2 a{
+            transform: translateY(-3px);
+        }
+        .realisation{
+            justify-content: center;
+            
+        }
+        
+        
+    </style>
 </head>
 <body>
     <header>
@@ -23,10 +123,113 @@
         </nav>
     </header>
     <main>
-        <h1>voici mes projets</h1>
+        <section class="projet">
+            <h2>Mes Réalisations</h2>
+            <div class="realisation">
+
+                <div class="commerce">
+                    <img src="image/e-comerce.jpg" alt="" >
+                    <div class="detail">
+                        <h3>site E-commerce</h3>
+                        <p>
+                            Une boutique en ligne complète développée
+                            avec HTML, CSS et JavaScript pur.  
+                        </p>
+                        <div class="liens">
+                            <a href="">HTML</a>
+                            <a href="">CSS</a>
+                            <a href="">JS</a>
+                        </div>
+                        <hr>
+                        <div class="liens2"><a href="">code</a> <a href="">Démo</a></div>
+                    </div>
+                </div>
+                <div class="gestionaire">
+                    <img src="image/getstionnaire_de tache.jpg" alt="" >
+                    <div class="detail">
+                        <h3>Gestionnaire de Tâches</h3>
+                        <p>
+                            Application web pour organiser ses projets
+                            quotidiens avec stockage local.  
+                        </p>
+                        <div class="liens">
+                            <a href="">Python</a><a href="">Flask</a>
+                        </div>
+                        <hr>
+                        <div class="liens2"><a href="">code</a> <a href="">Démo</a></div>
+                    </div>
+                </div>
+                <div class="blog">
+                    <img src="image/blog_peersonnelle.jpg" alt="" >
+                    <div class="detail">
+                        <h3>Blog Personnel</h3>
+                        <p>
+                            Projet en cours de migration vers Laravel
+                            pour apprendre le backend.  
+                        </p>
+                        <div class="liens">
+                            <a href="">PHP</a>
+                            <a href="">Laravel</a>
+                        </div>
+                        <hr>
+                        <div class="liens2">
+                            <a href="#"><i class="fab fa-github">code</i></a> 
+                            <a href="#">Bientot</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="realisation">
+                <div class="commerce">
+                    <img src="image/tableau_d'analyse.jpg" alt="" >
+                    <div class="detail">
+                        <h3>Dashboard d'Analyse</h3>
+                        <p>
+                            Visualisation de données dynamiques avec
+                            Python et la bibliothèque Matplotlib.  
+                        </p>
+                        <div class="liens">
+                            <a href="">Python</a><a href="">Data</a>
+                        </div>
+                        <hr>
+                        <div class="liens2"><a href="">code</a> <a href="">Démo</a></div>
+                    </div>
+                </div>
+                <div class="gestionaire">
+                    <img src="image/Météo3 (1).jpg" alt="" >
+                    <div class="detail">
+                        <h3>Application Météo</h3>
+                        <p>
+                            Une application utilisant une API en temps
+                            réel pour afficher la météo mondiale.  
+                        </p>
+                        <div class="liens">
+                            <a href="">JavaScript</a><a href="">API</a>
+                        </div>
+                        <hr>
+                        <div class="liens2"><a href="">code</a> <a href="">Démo</a></div>
+                    </div>
+                </div>
+                <div class="blog">
+                    <img src="image/ui_mobile.jpg" alt="" >
+                    <div class="detail">
+                        <h3>Maquette Mobile UI</h3>
+                        <p>
+                            Conception d'une interface utilisateur
+                            moderne pour une application de fitness.  
+                        </p>
+                        <div class="liens">
+                            <a href="">Figma</a><a href="">Design</a>
+                        </div>
+                        <hr>
+                        <div class="liens2"><a href="">code</a> <a href="">Aperçu</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <h6><i>&copy;2026 Vigol. Tous droits résevées</i></h6>
+        <p><i>&copy;2026 Vigol. Tous droits résevées</i></p>
         <a href=""><img src="image/linkdin.png" alt="Linkdin.com" width="25"></a> 
         <a href=""><img src="image/GitHub.png" alt="GitHub.com" width="25"></a> 
         <a href=""><img src="image/X.png" alt="X.com" width="25"></a>
